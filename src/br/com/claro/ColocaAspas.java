@@ -1,4 +1,4 @@
-package br.com.claro;
+package avena;
 
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ public class ColocaAspas {
 
         // arquivo de entrada - padrão de projeto java decorator
 
-        FileInputStream arquivo = new FileInputStream("C:\\Users\\F136450\\IdeaProjects\\aspas\\out\\production\\aspas\\entrada.txt");
+        FileInputStream arquivo = new FileInputStream("entrada.txt");
         InputStreamReader leitor = new InputStreamReader(arquivo);
         BufferedReader leitorbuffer = new BufferedReader(leitor);
 
@@ -22,7 +22,7 @@ public class ColocaAspas {
 
         // escreve arquivo
 
-        FileOutputStream arquivoparaescrita = new FileOutputStream("C:\\Users\\F136450\\IdeaProjects\\aspas\\out\\production\\aspas\\saida.txt");
+        FileOutputStream arquivoparaescrita = new FileOutputStream("saida.txt");
         Writer leitorescrita = new OutputStreamWriter(arquivoparaescrita);
         BufferedWriter escritorbuffer = new BufferedWriter(leitorescrita);
 

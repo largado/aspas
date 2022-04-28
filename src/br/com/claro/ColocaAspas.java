@@ -1,20 +1,15 @@
 package avena;
 
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.BufferedWriter;
-import java.io.Writer;
+import java.io.*;
 
 public class ColocaAspas {
     public static void main (String[] args) throws IOException {
 
         // arquivo de entrada - padrão de projeto java decorator
 
-        FileInputStream arquivo = new FileInputStream("entrada.txt");
+        InputStream arquivo = System.in; // exemplo se a entrada fosse com o teclado
+
+        // FileInputStream arquivo = new FileInputStream("entrada.txt"); //exemplo entrada arquivo é a entrada
         InputStreamReader leitor = new InputStreamReader(arquivo);
         BufferedReader leitorbuffer = new BufferedReader(leitor);
 

@@ -1,11 +1,21 @@
 package avena;
 
 import java.io.*;
+import java.net.Socket;
 
 public class ColocaAspas {
     public static void main (String[] args) throws IOException {
 
         // arquivo de entrada - padrão de projeto java decorator
+
+        /* exemplo via rede
+
+        Socket s = new Socket();
+        FileOutputStream arquivoparaescrita = new s.getOutputStream();
+        Writer leitorescrita = new OutputStreamWriter(arquivoparaescrita);
+        BufferedWriter escritorbuffer = new BufferedWriter(leitorescrita);
+
+        */
 
         InputStream arquivo = System.in; // exemplo se a entrada fosse com o teclado
 
